@@ -123,6 +123,10 @@ public:
                 current->next->prev = current->prev;
         }
 
-        
+        //step 5: Delete the node
+        delete current;
+        cout << "Record with roll number " << rollNo << "Deleted" << endl;
     }
+
+    
 }
