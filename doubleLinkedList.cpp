@@ -163,7 +163,7 @@ void revtraverse()
 
     //step 1: Move to last node
     Node *currentNode = START;
-    int 1 = 0;
+    int i = 0;
     while (currentNode->next != NULL)
     {
         currentNode = currentNode->next;
@@ -182,5 +182,34 @@ void revtraverse()
     }
 }
 
-void serachData 
+void serachData()
+{
+    if (START == NULL)
+    {
+        cout << "\nList is empty" << endl;
+        return;
+    }
+
+    int rollNo;
+    cout << "\nEnter the roll number to serach : ";
+    cin >> rollNo;
+
+    Node *current = START;
+
+    //step 1: Traverse to find matchimh rollnumber
+    while (current != NULL && current->noMhs != rollNo)
+        current = current->next;
+
+    //step 2: Output result
+    if (current == NULL)
+    {
+        cout << "Record not found\n";
+    }
+    else
+    {
+        cout << "Record found\n";
+        cout << "Roll Number : " << current->noMhs << endl;
+    }
 }
+};
+
