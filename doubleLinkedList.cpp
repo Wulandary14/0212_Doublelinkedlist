@@ -174,7 +174,7 @@ void revtraverse()
     cout << "\nRecor is descending order of roll number are :\n";
     while (currentNode != NULL)
     {
-        cout << i _ 1 << ". " << currentNode->noMhs << " " << endl;
+        cout << i + 1 << ". " << currentNode->noMhs << " " << endl;
 
     //step 3: Move to previous node
     currentNode = currentNode->prev;
